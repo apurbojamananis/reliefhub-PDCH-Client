@@ -69,12 +69,12 @@
 }
 
 @layer base {
-  * {
+  /* * {
     @apply border-border;
   }
   body {
     @apply text-foreground;
-  }
+  } */
 
   h2 {
     @apply text-4xl lg:text-6xl font-semibold pl-5  border-l-4 border-secondaryColor;

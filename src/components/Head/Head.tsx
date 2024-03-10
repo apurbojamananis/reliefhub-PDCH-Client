@@ -9,7 +9,7 @@ import {
 
 const Head = () => {
   return (
-    <header className="bg-primaryColor ">
+    <header className="bg-primaryColor dark:bg-green-900">
       <div className="container mx-auto flex justify-between items-center text-white  min-h-10">
         <div className="flex gap-5">
           <a href="#">

@@ -5,8 +5,8 @@ import { Swiper as SwiperType } from "swiper";
 const Testimonial = () => {
   const swiperRef = useRef<SwiperType>();
   return (
-    <section>
-      <div className="container mx-auto py-16 py-lg-28">
+    <section className="dark:bg-gray-800 dark:text-white">
+      <div className="container mx-auto py-16 py-lg-28 ">
         <div className="pb-10 flex justify-between">
           <div className="">
             <h3 className="mb-5">Testimonial</h3>
@@ -26,11 +26,7 @@ const Testimonial = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 19l-7-7 7-7"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
             </div>
@@ -48,11 +44,7 @@ const Testimonial = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>

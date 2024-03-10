@@ -2,13 +2,13 @@ import PrimaryButton from "@/utils/PrimaryButton/PrimaryButton";
 import { TSupplies } from "./Supplies";
 import { NavLink } from "react-router-dom";
 
-export type  TSupplyCardProps = {
+export type TSupplyCardProps = {
   item: TSupplies;
-}
+};
 
 const SupplyCard: React.FC<TSupplyCardProps> = ({ item }) => {
   return (
-    <div className="shadow-md ">
+    <div className="shadow-md dark:shadow-sm dark:shadow-white rounded-lg">
       <img
         className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
         src={item.Image}
@@ -18,9 +18,7 @@ const SupplyCard: React.FC<TSupplyCardProps> = ({ item }) => {
       <div className="mt-8 p-5">
         <span className="text-secondaryColor uppercase">{item.Category}</span>
 
-        <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
-          {item.Title}
-        </h1>
+        <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">{item.Title}</h1>
 
         {/* <p className="mt-2 text-gray-500 dark:text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est

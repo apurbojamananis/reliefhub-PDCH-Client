@@ -12,6 +12,7 @@ const Home = () => {
     <div>
       <Banner />
       <HomeSupplies />
+      {/* <hr className="hidden dark:block dark:bg-gray-600 border-none h-[1px]" /> */}
       <AboutUs />
       <Gallery />
       <Testimonial />

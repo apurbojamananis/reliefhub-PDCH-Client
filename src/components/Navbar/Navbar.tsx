@@ -8,6 +8,7 @@ import { currentToken, logout } from "@/redux/features/auth/AuthSlice";
 import { toast } from "sonner";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <section className="relative">
+    <section className="relative dark:bg-gray-800 dark:text-white">
       <div className="container mx-auto py-3">
         <div className="flex justify-between items-center ">
           <div>
@@ -45,6 +46,7 @@ const Navbar = () => {
                 <PrimaryButton>Login</PrimaryButton>
               </NavLink>
             )}
+            <ThemeToggle />
           </div>
 
           <div
@@ -64,9 +66,7 @@ const Navbar = () => {
                 {token ? (
                   <NavLink to="/">
                     {" "}
-                    <SecondaryButton onClick={handleClick}>
-                      Logout
-                    </SecondaryButton>
+                    <SecondaryButton onClick={handleClick}>Logout</SecondaryButton>
                   </NavLink>
                 ) : (
                   <NavLink to="login">
@@ -76,7 +76,9 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="flex md:hidden">
+          <div className="flex md:hidden justify-center items-center gap-5">
+            <ThemeToggle />
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -107,11 +109,7 @@ const Navbar = () => {
               })}
               onClick={handleOpen}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
           </div>
         </div>

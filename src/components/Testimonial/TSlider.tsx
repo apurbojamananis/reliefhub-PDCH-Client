@@ -34,20 +34,20 @@ export default function TSlider({ SwiperReference }: any) {
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
         modules={[Autoplay, Pagination, Navigation]}
         onBeforeInit={(swiper) => {
           SwiperReference.current = swiper;
         }}
-        className="mySwiper"
+        className="mySwiper "
       >
         <SwiperSlide>
-          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px]">
-            <p className="leading-loose text-gray-500 text-left ">
-              “ I've been involved in disaster response for decades, and I can
-              say with confidence that this platform is a game-changer. It
-              simplifies logistics and ensures that resources are distributed
-              where they're needed most. ”
+          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px] dark:bg-gray-700 ">
+            <p className="leading-loose text-gray-500 dark:text-gray-200  text-left ">
+              “ I've been involved in disaster response for decades, and I can say with confidence
+              that this platform is a game-changer. It simplifies logistics and ensures that
+              resources are distributed where they're needed most. ”
             </p>
 
             <div className="flex items-center mt-6 -mx-2">
@@ -58,10 +58,10 @@ export default function TSlider({ SwiperReference }: any) {
               />
 
               <div className="mx-2">
-                <h1 className="font-semibold text-gray-800 text-left">
+                <h1 className="font-semibold text-gray-800 dark:text-white text-left">
                   Robert John
                 </h1>
-                <span className="text-sm text-gray-500 text-left">
+                <span className="text-sm text-gray-500 dark:text-gray-300 text-left">
                   Disaster Relief Coordinator
                 </span>
               </div>
@@ -69,12 +69,11 @@ export default function TSlider({ SwiperReference }: any) {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px]">
-            <p className="leading-loose text-gray-500 text-left ">
-              “ As a healthcare provider, I've seen firsthand the chaos that
-              ensues after a disaster. Thanks to this platform, we were able to
-              efficiently manage our medical supplies and provide crucial care
-              to those affected. ”
+          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px] dark:bg-gray-700 ">
+            <p className="leading-loose text-gray-500 dark:text-gray-200  text-left ">
+              “ As a healthcare provider, I've seen firsthand the chaos that ensues after a
+              disaster. Thanks to this platform, we were able to efficiently manage our medical
+              supplies and provide crucial care to those affected. ”
             </p>
 
             <div className="flex items-center mt-6 -mx-2">
@@ -85,11 +84,11 @@ export default function TSlider({ SwiperReference }: any) {
               />
 
               <div className="mx-2">
-                <h1 className="font-semibold text-gray-800 text-left ">
+                <h1 className="font-semibold text-gray-800 dark:text-white text-left">
                   {" "}
                   Dr. Jeny Doe
                 </h1>
-                <span className="text-sm text-gray-500 text-left">
+                <span className="text-sm text-gray-500 dark:text-gray-300 text-left">
                   Doctor at ABC hospital
                 </span>
               </div>
@@ -97,12 +96,11 @@ export default function TSlider({ SwiperReference }: any) {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px]">
-            <p className="leading-loose text-gray-500 text-left ">
-              “ I volunteered with relief efforts in the aftermath of a recent
-              disaster, and this platform was a game-changer. It enabled us to
-              coordinate our efforts seamlessly and ensure that resources
-              reached those who needed them most. ”
+          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px] dark:bg-gray-700 ">
+            <p className="leading-loose text-gray-500 dark:text-gray-200  text-left ">
+              “ I volunteered with relief efforts in the aftermath of a recent disaster, and this
+              platform was a game-changer. It enabled us to coordinate our efforts seamlessly and
+              ensure that resources reached those who needed them most. ”
             </p>
 
             <div className="flex items-center mt-6 -mx-2">
@@ -113,10 +111,8 @@ export default function TSlider({ SwiperReference }: any) {
               />
 
               <div className="mx-2">
-                <h1 className="font-semibold text-gray-800 text-left ">
-                  Mia Brown
-                </h1>
-                <span className="text-sm text-gray-500 text-left">
+                <h1 className="font-semibold text-gray-800 dark:text-white text-left">Mia Brown</h1>
+                <span className="text-sm text-gray-500 dark:text-gray-300 text-left">
                   Marketing Manager at ReliefHub
                 </span>
               </div>
@@ -124,12 +120,11 @@ export default function TSlider({ SwiperReference }: any) {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px]">
-            <p className="leading-loose text-gray-500 text-left ">
-              “ Volunteering with this platform gave me a sense of purpose in
-              the aftermath of a disaster. Knowing that I was part of a
-              coordinated effort to support our community's health brought me
-              hope and inspiration. ”
+          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px] dark:bg-gray-700 ">
+            <p className="leading-loose text-gray-500 dark:text-gray-200  text-left ">
+              “ Volunteering with this platform gave me a sense of purpose in the aftermath of a
+              disaster. Knowing that I was part of a coordinated effort to support our community's
+              health brought me hope and inspiration. ”
             </p>
 
             <div className="flex items-center mt-6 -mx-2">
@@ -140,10 +135,10 @@ export default function TSlider({ SwiperReference }: any) {
               />
 
               <div className="mx-2">
-                <h1 className="font-semibold text-gray-800 text-left ">
+                <h1 className="font-semibold text-gray-800 dark:text-white text-left">
                   Michael Chen
                 </h1>
-                <span className="text-sm text-gray-500 text-left">
+                <span className="text-sm text-gray-500 dark:text-gray-300 text-left">
                   Leader of Volunteer
                 </span>
               </div>
@@ -151,12 +146,11 @@ export default function TSlider({ SwiperReference }: any) {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px]">
-            <p className="leading-loose text-gray-500 text-left ">
-              “ During a time of crisis, every second counts. This platform
-              helped us save precious time by streamlining the distribution of
-              medical supplies, allowing us to focus on delivering essential
-              care to our community. ”
+          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px] dark:bg-gray-700 ">
+            <p className="leading-loose text-gray-500 dark:text-gray-200  text-left ">
+              “ During a time of crisis, every second counts. This platform helped us save precious
+              time by streamlining the distribution of medical supplies, allowing us to focus on
+              delivering essential care to our community. ”
             </p>
 
             <div className="flex items-center mt-6 -mx-2">
@@ -167,10 +161,10 @@ export default function TSlider({ SwiperReference }: any) {
               />
 
               <div className="mx-2">
-                <h1 className="font-semibold text-gray-800 text-left ">
+                <h1 className="font-semibold text-gray-800 dark:text-white text-left">
                   Mark Thompson
                 </h1>
-                <span className="text-sm text-gray-500 text-left">
+                <span className="text-sm text-gray-500 dark:text-gray-300 text-left">
                   Emergency Response Coordinator
                 </span>
               </div>
@@ -178,12 +172,11 @@ export default function TSlider({ SwiperReference }: any) {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px]">
-            <p className="leading-loose text-gray-500 text-left ">
-              “ Thanks to this platform, we were able to avoid the confusion and
-              inefficiency that often plague post-disaster relief efforts. Their
-              technology is a vital tool for any community preparing for or
-              recovering from a crisis. ”
+          <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px] dark:bg-gray-700 ">
+            <p className="leading-loose text-gray-500 dark:text-gray-200  text-left ">
+              “ Thanks to this platform, we were able to avoid the confusion and inefficiency that
+              often plague post-disaster relief efforts. Their technology is a vital tool for any
+              community preparing for or recovering from a crisis. ”
             </p>
 
             <div className="flex items-center mt-6 -mx-2">
@@ -194,10 +187,10 @@ export default function TSlider({ SwiperReference }: any) {
               />
 
               <div className="mx-2">
-                <h1 className="font-semibold text-gray-800 text-left">
+                <h1 className="font-semibold text-gray-800 dark:text-white text-left">
                   David Martinez
                 </h1>
-                <span className="text-sm text-gray-500 text-left">
+                <span className="text-sm text-gray-500 dark:text-gray-300 text-left">
                   Public Health Officer
                 </span>
               </div>

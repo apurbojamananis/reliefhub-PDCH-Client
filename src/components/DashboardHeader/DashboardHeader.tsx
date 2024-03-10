@@ -1,24 +1,25 @@
 import { TUser, currentUser } from "@/redux/features/auth/AuthSlice";
 import { useAppSelector } from "@/redux/hooks";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const DashboardHeader = () => {
   const user: TUser | null = useAppSelector(currentUser);
   return (
-    <nav className="relative bg-white shadow className=">
+    <nav className="relative bg-white shadow dark:bg-gray-900 dark:text-white">
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex  lg:items-center lg:justify-end">
           <div className="flex justify-between items-center mt-4 lg:mt-0">
             <div className="">
               <input
                 type="text"
-                className="w-full py-2 px-2 md:pl-10 md:pr-4 text-gray-700 bg-white border rounded-lg  focus:outline-primaryColor "
+                className="w-full py-2 px-2 md:pl-10 md:pr-4 text-gray-700 bg-white dark:bg-gray-200 border rounded-lg  focus:outline-primaryColor "
                 placeholder="Search"
               />
             </div>
             <div className="flex">
-              <button className="mx-4 text-gray-600 transition-colors duration-300 transform  hover:text-gray-700">
+              <button className="mx-4 text-gray-600 dark:text-gray-200 transition-colors duration-300 transform  hover:text-gray-700">
                 <svg
-                  className="w-6 h-6"
+                  className="size-6"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +34,7 @@ const DashboardHeader = () => {
                 </svg>
               </button>
 
-              <div className="w-8 h-8 overflow-hidden border-2 border-gray-400 rounded-full">
+              <div className="w-8 h-8 overflow-hidden border-2 border-gray-400 dark:border-gray-200  rounded-full">
                 <img
                   src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
                   className="object-cover w-full h-full"
@@ -42,9 +43,10 @@ const DashboardHeader = () => {
               </div>
             </div>
 
-            <h3 className="pl-3 mx-2 text-gray-700 hidden lg:block">
+            <h3 className="px-3 mx-2 text-gray-700 dark:text-gray-200 hidden lg:block">
               {user?.name}
             </h3>
+            <ThemeToggle />
           </div>
         </div>
       </div>

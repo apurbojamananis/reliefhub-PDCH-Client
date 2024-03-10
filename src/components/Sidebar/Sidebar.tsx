@@ -79,12 +79,9 @@ const Sidebar = () => {
         <NavLink
           to="create-supply"
           className={({ isActive }: { isActive: boolean }): string =>
-            cn(
-              "bg-gray-400/50  px-2 py-3 rounded-lg  hover:bg-gray-600 hover:text-[#ebebeb] ",
-              {
-                "bg-gray-600 text-[#ebebeb]": isActive,
-              }
-            )
+            cn("bg-gray-400/50  px-2 py-3 rounded-lg  hover:bg-gray-600 hover:text-[#ebebeb] ", {
+              "bg-gray-600 text-[#ebebeb]": isActive,
+            })
           }
         >
           <div className="flex gap-2">
@@ -104,9 +101,7 @@ const Sidebar = () => {
               ></path>
             </svg>
 
-            <span className="text-base font-semibold truncate">
-              Create Supply{" "}
-            </span>
+            <span className="text-base font-semibold truncate">Create Supply </span>
           </div>
         </NavLink>
       </div>

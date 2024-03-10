@@ -60,16 +60,16 @@ const TableHeader: React.FC<TSupplyCardProps> = ({ item }) => {
 
   return (
     <tr>
-      <td className="px-4 py-4 text-md font-normal text-gray-800 whitespace-nowrap">
+      <td className="px-4 py-4 text-md font-normal text-gray-800 dark:text-gray-300 whitespace-nowrap">
         {Title}
       </td>
-      <td className="px-4 py-4 text-md font-normal text-gray-800 whitespace-nowrap ">
+      <td className="px-4 py-4 text-md font-normal text-gray-800 dark:text-gray-300 whitespace-nowrap ">
         <span className="capitalize">{Category}</span>
       </td>
-      <td className="px-4 py-4 text-md font-normal text-gray-800 whitespace-nowrap">
+      <td className="px-4 py-4 text-md font-normal text-gray-800 dark:text-gray-300 whitespace-nowrap">
         ${Amount}
       </td>
-      <td className="px-4 py-4 text-md text-gray-800 whitespace-nowrap">
+      <td className="px-4 py-4 text-md text-gray-800 dark:text-gray-300 whitespace-nowrap">
         <div>
           <Dialog>
             <DialogTrigger asChild>
@@ -90,7 +90,7 @@ const TableHeader: React.FC<TSupplyCardProps> = ({ item }) => {
                 </svg>
               </button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[500px]">
+            <DialogContent className="sm:max-w-[500px] dark:text-gray-200 dark:bg-gray-800">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <DialogHeader>
                   <DialogTitle>Update Supply Information</DialogTitle>
@@ -103,21 +103,18 @@ const TableHeader: React.FC<TSupplyCardProps> = ({ item }) => {
                     <input
                       id="Title"
                       defaultValue={Title}
-                      className="col-span-3 p-2"
+                      className="col-span-3 p-2 dark:bg-gray-500"
                       {...register("Title")}
                     />
                   </div>
                   <div className="grid grid-cols-4 items-center gap-4">
-                    <label
-                      htmlFor="Category"
-                      className="text-right font-semibold"
-                    >
+                    <label htmlFor="Category" className="text-right font-semibold">
                       Category:
                     </label>
                     <input
                       id="Category"
                       defaultValue={Category}
-                      className="col-span-3 p-2"
+                      className="col-span-3 p-2 dark:bg-gray-500"
                       {...register("Category")}
                     />
                   </div>
@@ -128,45 +125,36 @@ const TableHeader: React.FC<TSupplyCardProps> = ({ item }) => {
                     <input
                       id="Image"
                       defaultValue={Image}
-                      className="col-span-3 p-2"
+                      className="col-span-3 p-2 dark:bg-gray-500"
                       {...register("Image")}
                     />
                   </div>
                   <div className="grid grid-cols-4 items-center gap-4">
-                    <label
-                      htmlFor="Amount"
-                      className="text-right font-semibold"
-                    >
+                    <label htmlFor="Amount" className="text-right font-semibold">
                       Amount:
                     </label>
                     <input
                       id="Amount"
                       defaultValue={Amount}
-                      className="col-span-3 p-2"
+                      className="col-span-3 p-2 dark:bg-gray-500"
                       {...register("Amount")}
                     />
                   </div>
                   <div className="grid grid-cols-4 items-start gap-4 ">
-                    <label
-                      htmlFor="Description"
-                      className="text-right font-semibold pt-2"
-                    >
+                    <label htmlFor="Description" className="text-right font-semibold pt-2">
                       Description:
                     </label>
                     <textarea
                       id="Description"
                       defaultValue={Description}
-                      className="col-span-3 p-2"
+                      className="col-span-3 p-2 dark:bg-gray-500"
                       rows={5}
                       {...register("Description")}
                     />
                   </div>
                   <div className="hidden">
                     <div className="grid grid-cols-4 items-center gap-4 ">
-                      <label
-                        htmlFor="Name"
-                        className="text-right font-semibold"
-                      >
+                      <label htmlFor="Name" className="text-right font-semibold">
                         Donated By:
                       </label>
                       <input
@@ -194,7 +182,7 @@ const TableHeader: React.FC<TSupplyCardProps> = ({ item }) => {
           </Dialog>
         </div>
       </td>
-      <td className="px-4 py-4 text-gray-800  whitespace-nowrap">
+      <td className="px-4 py-4 text-gray-800  dark:text-gray-300 whitespace-nowrap">
         <button onClick={handleDelete}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

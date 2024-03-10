@@ -8,7 +8,7 @@ import { currentToken, logout } from "@/redux/features/auth/AuthSlice";
 import { toast } from "sonner";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

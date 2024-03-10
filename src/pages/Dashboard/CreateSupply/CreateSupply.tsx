@@ -20,7 +20,7 @@ const CreateSupply = () => {
     toast.success("Supply Created Successfully");
   };
   return (
-    <div className="container px-4 my-10 mx-auto bg-white">
+    <div className="container px-4 my-10 mx-auto rounded-lg bg-white dark:bg-gray-600 dark:text-white">
       <form onSubmit={handleSubmit(onSubmit)} className="shadow-lg  p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
           <div className="flex flex-col gap-3 ">

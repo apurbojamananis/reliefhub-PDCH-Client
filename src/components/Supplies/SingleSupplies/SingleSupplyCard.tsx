@@ -46,17 +46,11 @@ const SingleSupplyCard: React.FC<TSupplyCardProps> = ({ item }) => {
           />
 
           <div className="mt-8  lg:px-6 lg:mt-0">
-            <p className="text-5xl font-semibold text-secondaryColor">
-              {Title}
-            </p>
+            <p className="text-5xl font-semibold text-secondaryColor">{Title}</p>
 
-            <h1 className="text-2xl font-semibold text-gray-800  mt-5">
-              Category: {Category}
-            </h1>
+            <h1 className="text-2xl font-semibold text-gray-800  mt-5">Category: {Category}</h1>
 
-            <h3 className="mt-2 text-lg font-medium text-secondaryColor">
-              Price: ${Amount}
-            </h3>
+            <h3 className="mt-2 text-lg font-medium text-secondaryColor">Price: ${Amount}</h3>
 
             <p className="max-w-lg mt-6 text-textColor ">
               <span className="font-medium ">Description:</span> {Description}
@@ -68,36 +62,28 @@ const SingleSupplyCard: React.FC<TSupplyCardProps> = ({ item }) => {
                   <PrimaryButton>Donate Now</PrimaryButton>
                 </div>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-[500px]">
+              <DialogContent className="sm:max-w-[500px] dark:text-white dark:bg-gray-800">
                 <DialogHeader>
                   <DialogTitle>Supply Information</DialogTitle>
                 </DialogHeader>
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-5">
-                    <img
-                      src={Image}
-                      alt=""
-                      className="rounded-lg size-10 object-cover"
-                    />
+                    <img src={Image} alt="" className="rounded-lg size-10 object-cover" />
                     <h3 className="font-semibold">{Title}</h3>
                   </div>
                   <h4 className="flex gap-3">
-                    <span className="font-semibold">Category:</span>{" "}
-                    <span>{Category}</span>
+                    <span className="font-semibold">Category:</span> <span>{Category}</span>
                   </h4>
                   <h4 className="flex gap-3">
                     {" "}
-                    <span className="font-semibold">Price:</span>{" "}
-                    <span>${Amount}</span>
+                    <span className="font-semibold">Price:</span> <span>${Amount}</span>
                   </h4>
 
                   <h4 className="flex gap-3">
-                    <span className="font-semibold">Name:</span>{" "}
-                    <span>{user?.name}</span>
+                    <span className="font-semibold">Name:</span> <span>{user?.name}</span>
                   </h4>
                   <h4 className="flex gap-3">
-                    <span className="font-semibold">Email:</span>{" "}
-                    <span>{user?.email}</span>
+                    <span className="font-semibold">Email:</span> <span>{user?.email}</span>
                   </h4>
                   <p className="flex gap-3">
                     <span className="font-semibold  ">Description:</span>{" "}

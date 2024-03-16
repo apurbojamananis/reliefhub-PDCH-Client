@@ -60,16 +60,16 @@ const TableHeader: React.FC<TSupplyCardProps> = ({ item }) => {
 
   return (
     <tr>
-      <td className="px-4 py-4 text-md font-normal text-gray-800 dark:text-gray-300 whitespace-nowrap">
+      <td className="px-4 py-4 text-md font-normal text-gray-800 whitespace-nowrap">
         {Title}
       </td>
-      <td className="px-4 py-4 text-md font-normal text-gray-800 dark:text-gray-300 whitespace-nowrap ">
+      <td className="px-4 py-4 text-md font-normal text-gray-800  whitespace-nowrap ">
         <span className="capitalize">{Category}</span>
       </td>
-      <td className="px-4 py-4 text-md font-normal text-gray-800 dark:text-gray-300 whitespace-nowrap">
+      <td className="px-4 py-4 text-md font-normal text-gray-800  whitespace-nowrap">
         ${Amount}
       </td>
-      <td className="px-4 py-4 text-md text-gray-800 dark:text-gray-300 whitespace-nowrap">
+      <td className="px-4 py-4 text-md text-gray-800  whitespace-nowrap">
         <div>
           <Dialog>
             <DialogTrigger asChild>
@@ -182,7 +182,7 @@ const TableHeader: React.FC<TSupplyCardProps> = ({ item }) => {
           </Dialog>
         </div>
       </td>
-      <td className="px-4 py-4 text-gray-800  dark:text-gray-300 whitespace-nowrap">
+      <td className="px-4 py-4 text-gray-800   whitespace-nowrap">
         <button onClick={handleDelete}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

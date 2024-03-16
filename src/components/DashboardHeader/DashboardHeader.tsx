@@ -5,7 +5,7 @@ import ThemeToggle from "../ThemeToggle/ThemeToggle";
 const DashboardHeader = () => {
   const user: TUser | null = useAppSelector(currentUser);
   return (
-    <nav className="relative bg-white shadow dark:bg-gray-900 dark:text-white">
+    <nav className="relative bg-white shadow dark:bg-gray-800 dark:text-white">
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex  lg:items-center lg:justify-end">
           <div className="flex justify-between items-center mt-4 lg:mt-0">

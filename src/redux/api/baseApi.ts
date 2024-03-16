@@ -6,6 +6,6 @@ export const baseApi = createApi({
   // baseQuery: fetchBaseQuery({
   //   baseUrl: "https://l2-b2-front-end-assignment-6-backend-server.vercel.app/",
   // }),
-  tagTypes: ["Supplies"],
+  tagTypes: ["Supplies", "CommunityGratitude"],
   endpoints: () => ({}),
 });

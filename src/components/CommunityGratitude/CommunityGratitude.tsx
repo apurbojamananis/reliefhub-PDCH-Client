@@ -78,11 +78,14 @@ const CommunityGratitude = () => {
                 rows={8}
                 className=" w-full p-2 rounded-lg focus:outline-secondaryColor border border-secondaryColor dark:bg-gray-500"
                 placeholder="Share your experience"
-                {...(register("comment"), { required: true, maxLength: 120 })}
+                {...register("comment", { required: true, maxLength: 120 })}
               />
-              <p>
-                {errors.name && errors.name.type === "maxLength" && (
-                  <span>Max length exceeded</span>
+              <p className="text-red-500">
+                {errors.comment && errors.comment.type === "required" && (
+                  <span role="alert">*This is required</span>
+                )}
+                {errors.comment && errors.comment.type === "maxLength" && (
+                  <span role="alert">*Max length exceeded</span>
                 )}
               </p>
             </div>
@@ -91,8 +94,16 @@ const CommunityGratitude = () => {
                 <button
                   type="submit"
                   className={cn(
-                    "px-3 py-2 bg-secondaryColor text-white font-medium hover:bg-transparent outline outline-1 hover:outline-secondaryColor hover:text-secondaryColor transition-all"
+                    "px-3 py-2 bg-secondaryColor text-white font-medium hover:bg-transparent outline outline-1 hover:outline-secondaryColor hover:text-secondaryColor transition-all",
+                    {
+                      "opacity-50 cursor-not-allowed":
+                        errors?.comment?.type === "required" ||
+                        errors?.comment?.type === "maxLength",
+                    }
                   )}
+                  disabled={
+                    errors?.comment?.type === "required" || errors?.comment?.type === "maxLength"
+                  }
                 >
                   Share
                 </button>

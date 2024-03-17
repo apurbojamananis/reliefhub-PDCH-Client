@@ -25,9 +25,7 @@ type TProps = {
 };
 
 const Supplies = ({ initialLimit, ShowBtn }: TProps) => {
-  const viewAll = useAppSelector(
-    (state: RootState) => state.LimitValue.viewAll
-  );
+  const viewAll = useAppSelector((state: RootState) => state.LimitValue.viewAll);
   const dispatch = useAppDispatch();
 
   const limit = viewAll ? 12 : initialLimit;
@@ -38,7 +36,7 @@ const Supplies = ({ initialLimit, ShowBtn }: TProps) => {
   };
 
   return (
-    <section className="">
+    <section className="dark:bg-gray-800">
       <div className="container mx-auto py-16 py-lg-28">
         <div
           className={cn("mb-10", {
@@ -48,15 +46,13 @@ const Supplies = ({ initialLimit, ShowBtn }: TProps) => {
           <h3 className="mb-5">Supplies</h3>
           <h2>Essential Supplies</h2>
           <p className="mt-5">
-            Discover vital supplies showcased in convenient cards below,
-            offering a quick glimpse into each item's key details.
+            Discover vital supplies showcased in convenient cards below, offering a quick glimpse
+            into each item's key details.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 gap-y-20">
           {Array.isArray(data) &&
-            data?.map((item: TSupplies) => (
-              <SupplyCard item={item} key={item._id} />
-            ))}
+            data?.map((item: TSupplies) => <SupplyCard item={item} key={item._id} />)}
         </div>
         <div
           className={cn(

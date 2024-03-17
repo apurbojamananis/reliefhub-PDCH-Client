@@ -1,0 +1,122 @@
+[
+  {
+    "Image": "https://i.ibb.co/6J5PVbR/3.jpg",
+    "Title": "N95 Respirator Mask",
+    "Category": "Personal Protective Equipment",
+    "Amount": "2.50",
+    "Description": "Protect yourself and your loved ones from airborne particles and viruses with this high-quality N95 respirator mask. Engineered to provide superior filtration efficiency, it features an adjustable nose clip and comfortable ear loops for a secure fit. Whether you're commuting, traveling, or working in high-risk environments, this mask offers reliable protection.",
+    "Name": "Anishur Rahman"
+  },
+  {
+    "Image": "https://i.ibb.co/QKbxsCF/13.jpg",
+    "Title": "Sterile Gauze Pads",
+    "Category": "Medical Supplies",
+    "Amount": "6.25",
+    "Description": "Dress wounds with confidence using these sterile gauze pads. Soft and non-adherent, they provide gentle protection and absorbency for sensitive skin. Whether you're applying first aid or changing dressings, these pads are essential for promoting clean and hygienic wound care.",
+    "Name": "John Doe"
+  },
+  {
+    "Image": "https://i.ibb.co/s5Qp5Sz/1.jpg",
+    "Title": "First Aid Kit",
+    "Category": "Medical Supplies",
+    "Amount": "50.00",
+    "Description": "This comprehensive first aid kit is a must-have for every home, car, or travel bag. It contains essential medical supplies to handle minor injuries and emergencies with ease. From bandages, antiseptic wipes, scissors, to adhesive tape, this compact kit has everything you need to quickly address cuts, scrapes, and other common ailments.",
+    "Name": "Anishur Rahman"
+  },
+  {
+    "Image": "https://i.ibb.co/MSKbYR1/11.jpg",
+    "Title": "Burn Cream",
+    "Category": "First Aid",
+    "Amount": "6.50",
+    "Description": "Soothe and heal minor burns, sunburns, and scalds with this antiseptic burn cream. Formulated with a gentle, soothing formula, it provides immediate relief from pain and discomfort. Keep it on hand in your first aid kit or medicine cabinet for quick and effective treatment of minor burn injuries.",
+    "Name": "John Doe"
+  },
+  {
+    "Image": "https://i.ibb.co/Npfk4bt/7.jpg",
+    "Title": "Pain Relief Tablets",
+    "Category": "Medications",
+    "Amount": "9.99",
+    "Description": "Find relief from mild to moderate pain and fever with these over-the-counter pain relief tablets. Formulated with acetaminophen, they provide effective relief from headaches, muscle aches, and fevers. Whether you're at home or on the go, these tablets are a convenient solution for managing everyday discomforts.",
+    "Name": "Anishur Rahman"
+  },
+  {
+    "Image": "https://i.ibb.co/CbXhB7p/9.jpg",
+    "Title": "Emergency Whistle",
+    "Category": "Emergency Supplies",
+    "Amount": "2.00",
+    "Description": "Stay safe and be heard in emergency situations with this loud emergency whistle. Crafted from durable materials, it produces a sharp, penetrating sound that can be heard from a distance. Whether you're hiking, camping, or in need of assistance, this whistle is an essential tool for signaling for help and alerting others to your presence.",
+    "Name": "Anishur Rahman"
+  },
+  {
+    "Image": "https://i.ibb.co/VSPCRbd/10.jpg",
+    "Title": "Alcohol Prep Pads",
+    "Category": "Medical Supplies",
+    "Amount": "3.75",
+    "Description": "Ensure proper disinfection with these individually wrapped alcohol prep pads. Designed for skin preparation before injections or minor medical procedures, they help reduce the risk of infection. Compact and convenient, they're perfect for including in your first aid kit or carrying with you for on-the-go use.",
+    "Name": "Anishur Rahman"
+  },
+  {
+    "Image": "https://i.ibb.co/28GG0D4/4.jpg",
+    "Title": "Digital Thermometer",
+    "Category": "Medical Devices",
+    "Amount": "12.99",
+    "Description": "Monitor your health with confidence using this reliable digital thermometer. Designed for accuracy and ease of use, it provides precise temperature readings suitable for all ages. The clear LCD display ensures easy readability, making it ideal for monitoring fevers and tracking changes in body temperature.",
+    "Name": "Apurbo Jaman"
+  },
+  {
+    "Image": "https://i.ibb.co/d7JBvWV/8.jpg",
+    "Title": "Adhesive Bandages",
+    "Category": "Medical Supplies",
+    "Amount": "4.50",
+    "Description": "Stock up on these assorted adhesive bandages for all your minor wound care needs. From cuts and scrapes to blisters and abrasions, these bandages provide reliable protection and promote healing. With assorted sizes and shapes, you'll always have the right bandage on hand to cover and protect your skin.",
+    "Name": "Apurbo Jaman"
+  },
+  {
+    "Image": "https://i.ibb.co/qNCyHT3/2.jpg",
+    "Title": "Antibacterial Hand Sanitizer",
+    "Category": "Personal Hygiene",
+    "Amount": "5.99",
+    "Description": "Stay protected on the go with this portable hand sanitizer gel. Formulated with 70% alcohol content, it effectively eliminates germs and bacteria, keeping your hands clean and hygienic. The convenient travel-sized bottle allows you to easily carry it in your pocket, purse, or backpack, ensuring cleanliness wherever you are.",
+    "Name": "Apurbo Jaman"
+  },
+  {
+    "Image": "https://i.ibb.co/FWVxmc3/14.jpg",
+    "Title": "Tweezers",
+    "Category": "Medical Tools",
+    "Amount": "3.99",
+    "Description": "Remove splinters, debris, and ticks with precision using these stainless steel tweezers. Featuring fine tips and a durable construction, they ensure hygienic and efficient removal without causing further irritation. A must-have tool for your first aid kit or medicine cabinet, these tweezers are suitable for various medical and grooming tasks.",
+    "Name": "Anishur Rahman"
+  },
+  {
+    "Image": "https://i.ibb.co/WBXcqTV/5.jpg",
+    "Title": "Emergency Blanket",
+    "Category": "Emergency Supplies",
+    "Amount": "3.50",
+    "Description": "Be prepared for outdoor adventures or unexpected emergencies with this durable emergency blanket. Constructed from reflective material, it helps retain body heat, providing essential warmth in survival situations. Compact and lightweight, it easily fits in your backpack or first aid kit, making it an essential addition to your outdoor gear.",
+    "Name": "Anishur Rahman"
+  },
+  {
+    "Image": "https://i.ibb.co/M1FyWxj/6.jpg",
+    "Title": "Ace Bandage",
+    "Category": "Medical Supplies",
+    "Amount": "8.25",
+    "Description": "Promote healing and support injured limbs with this elastic bandage wrap. Its breathable fabric ensures comfort during extended wear, while the elastic properties provide gentle compression for enhanced recovery. Whether you're managing sprains, strains, or joint injuries, this versatile bandage is an essential addition to your first aid supplies.",
+    "Name": "Anishur Rahman"
+  },
+  {
+    "Image": "https://i.ibb.co/tJVLc6j/15.jpg",
+    "Title": "Cold Compress Pack",
+    "Category": "First Aid",
+    "Amount": "4.75",
+    "Description": "Relieve pain, swelling, and inflammation with this instant cold compress pack. Whether you're treating injuries, strains, or sprains, it provides immediate cold therapy to help alleviate discomfort and promote recovery. Compact and easy to activate, it's an essential addition to your first aid supplies for managing aches and pains.",
+    "Name": "John Doe"
+  },
+  {
+    "Image": "https://i.ibb.co/p044VkD/12.jpg",
+    "Title": "Multivitamin Supplements",
+    "Category": "Medications",
+    "Amount": "14.99",
+    "Description": "Support your overall health and immune system with these daily multivitamin supplements. Packed with essential vitamins and minerals, they help fill nutritional gaps and promote optimal wellness. Whether you're looking to boost your immunity, support energy levels, or maintain vitality, these supplements are a convenient and effective solution.",
+    "Name": "Anishur Rahman"
+  }
+]

@@ -16,8 +16,8 @@ const backgroundColors = [
   "bg-yellow-300",
   "bg-purple-300",
   "bg-pink-300",
-  "bg-orange-300", // Orange color
-  "bg-red-300", // Red color
+  "bg-orange-300",
+  "bg-red-300",
 ];
 const Community = () => {
   const { data } = useGetCommunityGratitudeQuery(undefined);

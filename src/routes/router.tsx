@@ -5,6 +5,7 @@ import ProtectedLayout from "@/components/layouts/ProtectedLayout";
 import AllSupplies from "@/pages/AllSupplies/AllSupplies";
 import Community from "@/pages/Community";
 import CreateSupply from "@/pages/Dashboard/CreateSupply/CreateSupply";
+import CreateTestimonial from "@/pages/Dashboard/CreateTestimonial/CreateTestimonial";
 import DAllSupplies from "@/pages/Dashboard/DAllSupplies/DAllSupplies";
 import Dashboard from "@/pages/Dashboard/Dashboard";
 import Home from "@/pages/Home";
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "create-supply",
         element: <CreateSupply />,
+      },
+      {
+        path: "create-testimonial",
+        element: <CreateTestimonial />,
       },
     ],
   },

@@ -10,8 +10,21 @@ import "./TStyles.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useGetTestimonialsQuery } from "@/redux/features/testimonials/testimonialsApi";
+
+export type TTestimonial = {
+  _id?: string;
+  username: string;
+  email: string;
+  image: string;
+  title: string;
+  testimonial: string;
+  timestamp: Date;
+};
 
 export default function TSlider({ SwiperReference }: any) {
+  const { data } = useGetTestimonialsQuery(undefined);
+
   return (
     <>
       <Swiper
@@ -42,7 +55,35 @@ export default function TSlider({ SwiperReference }: any) {
         }}
         className="mySwiper "
       >
-        <SwiperSlide>
+        {data?.map((item: TTestimonial) => (
+          <SwiperSlide key={item._id}>
+            <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[400px] dark:bg-gray-700 flex flex-col justify-between">
+              <div>
+                <p className="leading-loose text-gray-500 dark:text-gray-200  text-left ">
+                  “{item.testimonial}”
+                </p>
+              </div>
+
+              <div className="flex items-center mt-6 -mx-2">
+                <img
+                  className="object-cover mx-2 rounded-full w-14 h-14"
+                  src={item.image}
+                  alt={item.username}
+                />
+
+                <div className="mx-2">
+                  <h1 className="font-semibold text-gray-800 dark:text-white text-left">
+                    {item.username}
+                  </h1>
+                  <span className="text-sm text-gray-500 dark:text-gray-300 text-left">
+                    {item.title}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+        {/* <SwiperSlide>
           <div className="w-full p-8 bg-[#E3F5F5] rounded-md shadow-sm min-h-[450px] lg:min-h-[350px] dark:bg-gray-700 ">
             <p className="leading-loose text-gray-500 dark:text-gray-200  text-left ">
               “ I've been involved in disaster response for decades, and I can say with confidence
@@ -196,7 +237,7 @@ export default function TSlider({ SwiperReference }: any) {
               </div>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

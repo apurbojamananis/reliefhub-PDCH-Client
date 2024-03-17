@@ -4,17 +4,18 @@ export const communityWallApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getCommunityGratitude: builder.query({
       query: () => ({
-        url: "/community-gratitude",
+        url: `api/v1/community-gratitude`,
         method: "GET",
       }),
-      providesTags: ["CommunityGratitude"],
     }),
+
     postCommunityGratitude: builder.mutation({
       query: (doc) => ({
-        url: "/community-gratitude",
+        url: `api/v1/community-gratitude`,
         method: "POST",
         body: doc,
       }),
+      invalidatesTags: ["CommunityGratitude"],
     }),
   }),
 });

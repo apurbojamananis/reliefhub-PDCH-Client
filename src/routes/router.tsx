@@ -3,6 +3,7 @@ import SingleSupplies from "@/components/Supplies/SingleSupplies/SingleSupplies"
 import DashboardLayout from "@/components/layouts/DashboardLayout";
 import ProtectedLayout from "@/components/layouts/ProtectedLayout";
 import AllSupplies from "@/pages/AllSupplies/AllSupplies";
+import Community from "@/pages/Community";
 import CreateSupply from "@/pages/Dashboard/CreateSupply/CreateSupply";
 import DAllSupplies from "@/pages/Dashboard/DAllSupplies/DAllSupplies";
 import Dashboard from "@/pages/Dashboard/Dashboard";
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "supplies/:id",
         element: <SingleSupplies />,
+      },
+      {
+        path: "community",
+        element: <Community />,
       },
     ],
   },

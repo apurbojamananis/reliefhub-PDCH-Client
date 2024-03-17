@@ -9,9 +9,7 @@ const Menu = () => {
       <NavLink
         to="/"
         className={({ isActive }: { isActive: boolean }): string =>
-          isActive
-            ? "text-secondaryColor border-b-secondaryColor border-b-4 "
-            : ""
+          isActive ? "text-secondaryColor border-b-secondaryColor border-b-4 " : ""
         }
       >
         Home
@@ -19,20 +17,24 @@ const Menu = () => {
       <NavLink
         to="/supplies"
         className={({ isActive }: { isActive: boolean }): string =>
-          isActive
-            ? "text-secondaryColor border-b-secondaryColor border-b-4 "
-            : ""
+          isActive ? "text-secondaryColor border-b-secondaryColor border-b-4 " : ""
         }
       >
         All Supplies
+      </NavLink>
+      <NavLink
+        to="/community"
+        className={({ isActive }: { isActive: boolean }): string =>
+          isActive ? "text-secondaryColor border-b-secondaryColor border-b-4 " : ""
+        }
+      >
+        Community
       </NavLink>
       {token && (
         <NavLink
           to="/dashboard"
           className={({ isActive }: { isActive: boolean }): string =>
-            isActive
-              ? "text-secondaryColor border-b-secondaryColor border-b-4 "
-              : ""
+            isActive ? "text-secondaryColor border-b-secondaryColor border-b-4 " : ""
           }
         >
           Dashboard

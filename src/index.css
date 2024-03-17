@@ -112,6 +112,24 @@ body {
   height: 100%;
 }
 
+.gratitudeWallBG {
+  background-image: url("./assets/gratitudeWall.jpg");
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.gratitudeWallBG::before {
+  content: "";
+  background-color: rgba(2, 3, 3, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (max-width: 640px) {
   .bannerBg {
     max-height: 90vh;

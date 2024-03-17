@@ -48,11 +48,13 @@ const SingleSupplyCard: React.FC<TSupplyCardProps> = ({ item }) => {
           <div className="mt-8  lg:px-6 lg:mt-0">
             <p className="text-5xl font-semibold text-secondaryColor">{Title}</p>
 
-            <h1 className="text-2xl font-semibold text-gray-800  mt-5">Category: {Category}</h1>
+            <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-300   mt-5">
+              Category: {Category}
+            </h1>
 
             <h3 className="mt-2 text-lg font-medium text-secondaryColor">Price: ${Amount}</h3>
 
-            <p className="max-w-lg mt-6 text-textColor ">
+            <p className="max-w-lg mt-6 text-textColor dark:text-gray-300 ">
               <span className="font-medium ">Description:</span> {Description}
             </p>
 

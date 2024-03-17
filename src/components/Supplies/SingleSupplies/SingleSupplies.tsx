@@ -7,13 +7,11 @@ const SingleSupplies = () => {
   const { data, isLoading } = useGetSingleSupplyQuery(id);
 
   if (isLoading) {
-    return (
-      <p className="flex justify-center items-center h-screen">Loading...</p>
-    );
+    return <p className="flex justify-center items-center h-screen">Loading...</p>;
   }
 
   return (
-    <section>
+    <section className="dark:bg-gray-800 dark:text-white">
       <div className="allSuppliesBG ">
         <div className="container mx-auto  ">
           <div className="flex justify-center items-center min-h-[350px]">
@@ -21,9 +19,7 @@ const SingleSupplies = () => {
           </div>
         </div>
       </div>
-      <div className="">
-        {data && <SingleSupplyCard key={data._id} item={data} />}
-      </div>
+      <div className="">{data && <SingleSupplyCard key={data._id} item={data} />}</div>
     </section>
   );
 };

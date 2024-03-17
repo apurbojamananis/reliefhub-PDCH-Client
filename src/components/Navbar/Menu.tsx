@@ -30,6 +30,22 @@ const Menu = () => {
       >
         Community
       </NavLink>
+      <NavLink
+        to="/about-us"
+        className={({ isActive }: { isActive: boolean }): string =>
+          isActive ? "text-secondaryColor border-b-secondaryColor border-b-4 " : ""
+        }
+      >
+        About Us
+      </NavLink>
+      <NavLink
+        to="/volunteer"
+        className={({ isActive }: { isActive: boolean }): string =>
+          isActive ? "text-secondaryColor border-b-secondaryColor border-b-4 " : ""
+        }
+      >
+        Volunteer
+      </NavLink>
       {token && (
         <NavLink
           to="/dashboard"

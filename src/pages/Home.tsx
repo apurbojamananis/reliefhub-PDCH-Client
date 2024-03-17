@@ -1,10 +1,10 @@
-import AboutUs from "@/components/AboutUs/AboutUs";
+import AboutUsComp from "@/components/AboutUsComp/AboutUsComp";
 import Banner from "@/components/Banner/Banner";
 import Gallery from "@/components/Gallery/Gallery";
 import HomeSupplies from "@/components/Supplies/HomeSupplies";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Footer from "./Footer";
-import Volunteer from "@/components/Volunteer/Volunteer";
+import VolunteerComp from "@/components/VolunteerComp/VolunteerComp";
 import Blog from "@/components/Blog/Blog";
 
 const Home = () => {
@@ -12,11 +12,10 @@ const Home = () => {
     <div>
       <Banner />
       <HomeSupplies />
-      {/* <hr className="hidden dark:block dark:bg-gray-600 border-none h-[1px]" /> */}
-      <AboutUs />
+      <AboutUsComp />
       <Gallery />
       <Testimonial />
-      <Volunteer />
+      <VolunteerComp />
       <Blog />
       <Footer />
     </div>

@@ -2,7 +2,7 @@ import vol1 from "../../assets/Volunteer/1.jpg";
 import vol2 from "../../assets/Volunteer/2.jpg";
 import vol3 from "../../assets/Volunteer/3.jpg";
 import vol4 from "../../assets/Volunteer/4.avif";
-const Volunteer = () => {
+const VolunteerComp = () => {
   return (
     <section className="bg-white dark:bg-gray-900 dark:text-white">
       <div className="container px-6 py-16  py-lg-28 mx-auto">
@@ -69,4 +69,4 @@ const Volunteer = () => {
   );
 };
 
-export default Volunteer;
+export default VolunteerComp;

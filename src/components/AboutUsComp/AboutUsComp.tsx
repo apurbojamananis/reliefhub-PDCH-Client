@@ -1,7 +1,7 @@
 import PrimaryButton from "@/utils/PrimaryButton/PrimaryButton";
 import AboutUsMain from "../../assets/AboutUs.jpg";
 
-const AboutUs = () => {
+const AboutUsComp = () => {
   return (
     <section className="py-16 py-lg-28 dark:bg-gray-800 dark:text-white" id="about">
       <div className="container mx-auto ">
@@ -42,4 +42,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsComp;

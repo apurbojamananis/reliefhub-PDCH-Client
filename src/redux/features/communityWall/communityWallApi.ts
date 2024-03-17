@@ -7,6 +7,7 @@ export const communityWallApi = baseApi.injectEndpoints({
         url: `api/v1/community-gratitude`,
         method: "GET",
       }),
+      providesTags: ["CommunityGratitude"],
     }),
 
     postCommunityGratitude: builder.mutation({

@@ -23,6 +23,9 @@ The live Site [ReliefHub](https://reliefhub.netlify.app)
 - Supply Detail Page for detailed information about each supply post.
 - Login and Register Pages for user authentication.
 - Dashboard with statistical insights and options for managing supplies.
+- Community is for sharing What they are grateful for.
+- Volunteer pages for registration a new volunteer .
+- Leaderboard is for showing the top donor.
 
 ## Installation:
 

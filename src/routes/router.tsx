@@ -10,6 +10,7 @@ import CreateTestimonial from "@/pages/Dashboard/CreateTestimonial/CreateTestimo
 import DAllSupplies from "@/pages/Dashboard/DAllSupplies/DAllSupplies";
 import Dashboard from "@/pages/Dashboard/Dashboard";
 import Home from "@/pages/Home";
+import Leaderboard from "@/pages/Leaderboard";
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
 import Volunteer from "@/pages/Volunteer";
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "volunteer",
         element: <Volunteer />,
+      },
+      {
+        path: "leaderboard",
+        element: <Leaderboard />,
       },
     ],
   },

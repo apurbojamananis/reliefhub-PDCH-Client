@@ -8,7 +8,7 @@ defaults.responsive = true;
 import { useGetSuppliesQuery } from "@/redux/features/supplies/suppliesApi";
 import { TSupplies } from "@/components/Supplies/Supplies";
 
-type TPerson = {
+export type TPerson = {
   Name: string;
   Amount: number;
 };

@@ -9,9 +9,9 @@ const AboutUsComp = () => {
           <div className="h-full ">
             <img src={AboutUsMain} alt="" className="h-full rounded-xl" />
           </div>
-          <div className="flex flex-col justify-center lg:pl-16">
+          <div className="flex flex-col justify-center lg:pl-4">
             <h3 className="text-2xl mb-5 ">About us</h3>
-            <h2>Our Mission and Vission</h2>
+            <h2>Our Mission & Vision</h2>
             <p className="text-paragraphColor mt-5">
               we are dedicated to revolutionizing the way communities respond to health crises in
               the aftermath of disasters. Our platform serves as a lifeline for communities,

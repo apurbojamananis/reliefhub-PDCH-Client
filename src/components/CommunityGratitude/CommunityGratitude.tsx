@@ -13,6 +13,8 @@ import { currentToken } from "@/redux/features/auth/AuthSlice";
 import { useAppSelector } from "@/redux/hooks";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
+import { useNavigate } from "react-router-dom";
+import { TError } from "../VolunteerRegisterComp/VolunteerRegisterComp";
 
 const CommunityGratitude = () => {
   const {
@@ -21,6 +23,7 @@ const CommunityGratitude = () => {
     reset,
     formState: { errors },
   } = useForm();
+  const navigate = useNavigate();
   const token = useAppSelector(currentToken);
   // const userInfo = useAppSelector(currentUser);
   const [updateData] = usePostCommunityGratitudeMutation();
@@ -33,28 +36,36 @@ const CommunityGratitude = () => {
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     const alertId = toast.loading("Data posting...");
     try {
-      const currentUserName = user?.name;
-      const currentUserEmail = user?.email;
-      const postData = {
-        ...data,
-        timestamp: new Date(),
-        username: currentUserName,
-        email: currentUserEmail,
-      };
-      const result = await updateData(postData);
-      if (result?.error?.status === 400) {
-        toast.error(result?.error?.data?.message, {
-          id: alertId,
-          duration: 2000,
-        });
-      } else {
-        toast.success("Data post successfully", {
-          id: alertId,
-          duration: 2000,
-        });
-      }
+      if (token) {
+        const currentUserName = user?.name;
+        const currentUserEmail = user?.email;
+        const postData = {
+          ...data,
+          timestamp: new Date(),
+          username: currentUserName,
+          email: currentUserEmail,
+        };
+        const result: any | TError = await updateData(postData);
+        if (result?.error?.status === 400) {
+          toast.error(result?.error?.data?.message, {
+            id: alertId,
+            duration: 2000,
+          });
+        } else {
+          toast.success("Data post successfully", {
+            id: alertId,
+            duration: 2000,
+          });
+        }
 
-      reset();
+        reset();
+      } else {
+        toast.error("Please Login First!", {
+          id: alertId,
+          duration: 2000,
+        });
+        navigate("/login");
+      }
     } catch (error) {
       console.log(error);
     }

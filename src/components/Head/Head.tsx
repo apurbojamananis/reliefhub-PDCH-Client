@@ -10,7 +10,7 @@ import {
 const Head = () => {
   return (
     <header className="bg-primaryColor dark:bg-green-900">
-      <div className="container mx-auto flex justify-between items-center text-white  min-h-10">
+      <div className="container mx-auto hidden sm:flex justify-between items-center text-white  min-h-10">
         <div className="flex gap-5">
           <a href="#">
             <FacebookIcon className="bg-white text-primaryColor p-1 rounded-full font-bold" />
@@ -26,7 +26,7 @@ const Head = () => {
             <LinkedinIcon className="bg-white text-primaryColor p-1 rounded-full font-bold" />
           </a>
         </div>
-        <div className="flex gap-8">
+        <div className="hidden sm:flex gap-8">
           <span className="flex  items-center gap-3 font-semibold">
             <PhoneCall /> <span>+1(234) 000 000</span>
           </span>

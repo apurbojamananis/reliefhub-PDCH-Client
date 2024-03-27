@@ -9,7 +9,7 @@ type TVolunteerInfo = {
   number: string;
   location: string;
 };
-type TError = {
+export type TError = {
   data: {
     message: string;
     success: string;

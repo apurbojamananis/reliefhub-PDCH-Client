@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Menu = () => {
   const token = useAppSelector(currentToken);
   return (
-    <ul className="flex flex-col md:flex-row gap-6 text-right md:text-left font-medium text-lg">
+    <ul className="flex flex-col lg:flex-row gap-6 text-right lg:text-left font-medium text-lg">
       <NavLink
         to="/"
         className={({ isActive }: { isActive: boolean }): string =>

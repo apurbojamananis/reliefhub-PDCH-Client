@@ -34,7 +34,7 @@ const Navbar = () => {
             </NavLink>
           </div>
 
-          <div className="hidden md:flex items-center gap-5 ">
+          <div className="hidden lg:flex items-center gap-5 ">
             <Menu />
             {token ? (
               <NavLink to="/">
@@ -51,7 +51,7 @@ const Navbar = () => {
 
           <div
             className={cn(
-              "flex flex-col items-end pr-10 pb-10 gap-5 z-[999] absolute right-0 top-[92px] duration-300 w-full  bg-white md:hidden",
+              "flex flex-col items-end pr-10 pb-10 gap-5 z-[999] absolute right-0 top-[92px] duration-300 w-full  bg-white lg:hidden",
               {
                 "block translate-y-[0] ": isOpen,
                 "hidden translate-y-[-100%]": !isOpen,
@@ -76,7 +76,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="flex md:hidden justify-center items-center gap-5">
+          <div className="flex lg:hidden justify-center items-center gap-5">
             <ThemeToggle />
 
             <svg

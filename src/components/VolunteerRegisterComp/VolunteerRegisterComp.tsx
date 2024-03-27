@@ -42,9 +42,9 @@ const VolunteerRegisterComp = () => {
   };
   return (
     <section className="">
-      <div className=" flex justify-center p-10">
+      <div className=" flex justify-center lg:p-10 ">
         <form
-          className="w-2/3 py-8 px-10 rounded shadow-xl  dark:bg-gray-600"
+          className="w-full lg:w-2/3 py-8 px-10 rounded shadow-xl  dark:bg-gray-600"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="flex items-center justify-center mt-4 ">

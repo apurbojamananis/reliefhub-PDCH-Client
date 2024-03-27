@@ -9,6 +9,13 @@ type TVolunteerInfo = {
   number: string;
   location: string;
 };
+type TError = {
+  data: {
+    message: string;
+    success: string;
+  };
+  status: number;
+};
 
 const VolunteerRegisterComp = () => {
   const navigate = useNavigate();
@@ -21,9 +28,14 @@ const VolunteerRegisterComp = () => {
 
   const onSubmit: SubmitHandler<TVolunteerInfo> = async (data) => {
     try {
-      await registerVolunteerData(data);
-      toast.success("user Created Successfully");
-      navigate("/about-us");
+      const result: any | TError = await registerVolunteerData(data);
+      if (result?.error?.status === 400) {
+        const message = result?.error?.data.message;
+        toast.error(message);
+      } else {
+        toast.success("Volunteer Registered Successfully");
+        navigate("/about-us");
+      }
     } catch (error) {
       toast.error("Something went wrong");
     }

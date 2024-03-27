@@ -1,4 +1,5 @@
 import AboutUsComp from "@/components/AboutUsComp/AboutUsComp";
+import VolunteerRegistered from "@/components/VolunteerRegistered/VolunteerRegistered";
 
 const AboutUs = () => {
   return (
@@ -14,6 +15,8 @@ const AboutUs = () => {
       </div>
       <div className="container mx-auto  ">
         <AboutUsComp />
+        <hr className="dark:border-gray-600 " />
+        <VolunteerRegistered />
       </div>
     </section>
   );
